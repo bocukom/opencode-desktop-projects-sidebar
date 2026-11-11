@@ -32,6 +32,9 @@
     "CONTRIBUTING.md",
     "SECURITY.md"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "build": "vite build",
     "typecheck": "tsc --noEmit",

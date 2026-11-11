@@ -46,8 +46,19 @@ Do not commit diagnostic bundles. The production build contains no automation or
 2. Run `npm ci`, `npm run typecheck`, `npm test`, `npm run build`.
 3. Check the published contents with `npm pack --dry-run`.
 4. Install the packed tarball in a separate OpenCode configuration and verify install, enable, disable, and remove.
-5. Publish the beta with `npm publish --tag beta`.
-6. Confirm `npm view <name> dist-tags` and install the published version once.
+5. Log in to the official registry, because a local npm mirror is not a publishing target:
+
+   ```sh
+   npm login --registry=https://registry.npmjs.org
+   ```
+
+6. Publish the beta. `publishConfig` already selects the official registry; the explicit tag keeps `latest` untouched:
+
+   ```sh
+   npm publish --tag beta
+   ```
+
+7. Confirm `npm view opencode-desktop-projects-sidebar dist-tags` and install the published version once.
 
 `latest` should only be moved after a beta has been tested on the supported Desktop versions.
 
