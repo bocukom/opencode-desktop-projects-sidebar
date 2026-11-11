@@ -1,8 +1,9 @@
 # Projects Sidebar for OpenCode Desktop
 
 [![CI](https://github.com/bocukom/opencode-desktop-projects-sidebar/actions/workflows/ci.yml/badge.svg)](https://github.com/bocukom/opencode-desktop-projects-sidebar/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/opencode-desktop-projects-sidebar?label=npm)](https://www.npmjs.com/package/opencode-desktop-projects-sidebar)
 
-Project-grouped chat history, nested forks, and activity indicators for **OpenCode Desktop**.
+Project-grouped chat history, nested forks, and activity indicators for **OpenCode Desktop**. Inspired by the project sidebar in Claude Desktop; this is an independent, unofficial plugin.
 
 The plugin adds a fourth **Projects / Experimental** card to Preferences and replaces the Inbox list with project groups, while keeping OpenCode's native sidebar shell, header controls, search, resizing, and session actions.
 
@@ -32,14 +33,14 @@ Add the package to the `plugins` array in `~/.config/opencode/opencode.jsonc`, k
 {
   "$schema": "https://opencode.ai/config.json",
   "plugins": [
-    "opencode-desktop-projects-sidebar@0.1.0-beta.1"
+    "opencode-desktop-projects-sidebar@beta"
   ]
 }
 ```
 
-Then open **Preferences** and select **Projects / Experimental**. The native layout remains Inbox; the plugin stores its own enabled preference.
+The `beta` tag follows the newest prerelease. Pin an exact version such as `opencode-desktop-projects-sidebar@0.1.0-beta.2` if you need reproducible installs.
 
-An update to a newer beta is available as `opencode-desktop-projects-sidebar@beta`.
+Then open **Preferences** and select **Projects / Experimental**. The native layout remains Inbox; the plugin stores its own enabled preference.
 
 No build step is required for users: the package ships the prebuilt GUI bundle.
 

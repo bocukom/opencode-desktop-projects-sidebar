@@ -1,8 +1,8 @@
 {
   "name": "opencode-desktop-projects-sidebar",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0-beta.2",
   "type": "module",
-  "description": "Project-grouped chat history, nested forks, and activity indicators for OpenCode Desktop.",
+  "description": "Claude Desktop–style projects sidebar for OpenCode Desktop: grouped chats, nested forks, and activity indicators.",
   "license": "MIT",
   "author": "6ocukomIIoBoge <denis.mesnyankin@gmail.com>",
   "repository": {
@@ -41,10 +41,8 @@
     "test": "node --experimental-strip-types --test test/*.test.ts",
     "prepack": "npm run typecheck && npm test && npm run build"
   },
-  "dependencies": {
-    "@opencode/plugin": "2.2.5"
-  },
   "devDependencies": {
+    "@opencode/plugin": "2.2.5",
     "@types/jsdom": "^21.1.7",
     "@types/node": "^22.0.0",
     "jsdom": "26.1.0",
