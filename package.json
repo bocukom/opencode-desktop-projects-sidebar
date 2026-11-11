@@ -1,0 +1,41 @@
+{
+  "name": "opencode-desktop-projects-sidebar",
+  "version": "0.1.0-beta.1",
+  "type": "module",
+  "description": "Project-grouped chat history, nested forks, and activity indicators for OpenCode Desktop.",
+  "license": "MIT",
+  "author": "6ocukomIIoBoge <denis.mesnyankin@gmail.com>",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "opencode-desktop",
+    "gui-plugin",
+    "sidebar",
+    "sessions",
+    "projects"
+  ],
+  "exports": {
+    "./gui-experimental": "./dist/gui-experimental.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "prepack": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.2.5"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.0.0",
+    "jsdom": "26.1.0",
+    "solid-js": "1.9.15",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.0",
+    "vite-plugin-solid": "^2.11.0"
+  }
+}
