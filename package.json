@@ -18,7 +18,11 @@
     "./gui-experimental": "./dist/gui-experimental.cjs"
   },
   "files": [
-    "dist"
+    "dist",
+    "docs",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
   ],
   "scripts": {
     "build": "vite build",

@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a problem with the Projects sidebar plugin
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Do not include prompts, session transcripts, tokens, or screenshots with private project names.
+  - type: input
+    id: desktop
+    attributes:
+      label: OpenCode Desktop version
+      placeholder: 2.2.7
+    validations:
+      required: true
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin version
+      placeholder: 0.1.0-beta.1
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Ubuntu 24.04, macOS 15, Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Additional context
+      description: Relevant redacted logs or screenshots. Do not include session content.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed prompts, transcripts, tokens, and private project names from this report.
+          required: true
