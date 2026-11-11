@@ -1,5 +1,7 @@
 # Projects Sidebar for OpenCode Desktop
 
+[![CI](https://github.com/bocukom/opencode-desktop-projects-sidebar/actions/workflows/ci.yml/badge.svg)](https://github.com/bocukom/opencode-desktop-projects-sidebar/actions/workflows/ci.yml)
+
 Project-grouped chat history, nested forks, and activity indicators for **OpenCode Desktop**.
 
 The plugin adds a fourth **Projects / Experimental** card to Preferences and replaces the Inbox list with project groups, while keeping OpenCode's native sidebar shell, header controls, search, resizing, and session actions.
