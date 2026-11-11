@@ -5,6 +5,14 @@
   "description": "Project-grouped chat history, nested forks, and activity indicators for OpenCode Desktop.",
   "license": "MIT",
   "author": "6ocukomIIoBoge <denis.mesnyankin@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bocukom/opencode-desktop-projects-sidebar.git"
+  },
+  "homepage": "https://github.com/bocukom/opencode-desktop-projects-sidebar#readme",
+  "bugs": {
+    "url": "https://github.com/bocukom/opencode-desktop-projects-sidebar/issues"
+  },
   "keywords": [
     "opencode",
     "opencode-plugin",
